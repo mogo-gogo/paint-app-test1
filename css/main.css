@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.canvas-container {
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.canvas {
+  background: transparent;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.resize-canvas {
+  width: 5px;
+  height: 5px;
+  background: green;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.resize-canvas#resize-canvas-right {
+  right: 0%;
+  bottom: 50%;
+  cursor: col-resize;
+  transform: translate(100%, -50%);
+}
+
+.resize-canvas#resize-canvas-bottom {
+  right: 50%;
+  bottom: 0%;
+  cursor: row-resize;
+  transform: translate(-50%, 100%);
+}
+
+.resize-canvas#resize-canvas-bottom-right {
+  right: 0%;
+  bottom: 0%;
+  cursor: se-resize;
+  transform: translate(100%, 100%);
+}
+
+.sprite {
+  display: hidden;
+}
+
+.outlined {
+  box-shadow: 0px 0px 0px 1px black;
+}

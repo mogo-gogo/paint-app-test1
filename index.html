@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="" />
+    <script src="./js/main.js" type="module"></script>
+  </head>
+  <body>
+    <form action="none">
+      <button class="tool btn" id="pen-tool" type="button">Pen</button>
+      <button class="tool btn" id="fill-tool" type="button">Fill</button>
+      <button class="tool btn" id="line-tool" type="button">Line</button>
+      <button class="tool btn" id="rect-tool" type="button">Rect</button>
+      <button class="tool btn" id="circle-tool" type="button">Circle</button>
+    </form>
+    <div
+      class="canvas-container"
+      id="canvas-container"
+      style="width: 400px; height: 300px"
+    >
+      <canvas class="canvas" id="canvas" width="400" height="300"> </canvas>
+      <div class="resize-canvas" id="resize-canvas-right"></div>
+      <div class="resize-canvas" id="resize-canvas-bottom"></div>
+      <div class="resize-canvas" id="resize-canvas-bottom-right"></div>
+    </div>
+  </body>
+</html>
